@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #373c75;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #373c80;
+  }
+
+
+body {
+    background-color: #22254b;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo, #total_records { 
+    line-height: 36px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #ddd;
+    padding: 0 15px;
+}
+
+#total_records {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.search {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+#search_res {
+    padding: 0px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
